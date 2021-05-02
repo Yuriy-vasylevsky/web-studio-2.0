@@ -61,26 +61,25 @@
 	<Main>
 		<section class="filter">
 			<div class="container">
-
 				<ul class="filter-list list">
 					<li class="item">
-						<button type="button" class="button"> Все </button>
+						<button type="button" class="button filter-button"> Все </button>
 					</li>
 
 					<li class="item">
-						<button type="button" class="button"> Веб-сайты </button>
+						<button type="button" class="button filter-button"> Веб-сайты </button>
 					</li>
 
 					<li class="item">
-						<button type="button" class="button"> Приложения </button>
+						<button type="button" class="button filter-button"> Приложения </button>
 					</li>
 
 					<li class="item">
-						<button type="button" class="button"> Дизайн </button>
+						<button type="button" class="button filter-button"> Дизайн </button>
 					</li>
 
 					<li class="item">
-						<button type="button" class="button"> Маркетинг </button>
+						<button type="button" class="button filter-button"> Маркетинг </button>
 					</li>
 				</ul>
 			</div>
@@ -325,6 +324,17 @@
 
 				<div class="podpiska ">
 					<h2 class="footer-section-titlle">Подпышитесь на рассылуку</h2>
+					<form class="form">
+						<input type="email" class="input-mail" name="mail" id="mail" placeholder=" ">
+						<label for="mail" class="label-email">E-mail</label>
+
+						<button type="button" class="button main-button">
+							Подписаться
+							<svg class="btn-icon">
+								<use href="../img/sprite.svg#icon-send"></use>
+							</svg>
+						</button>
+					</form>
 				</div>
 			</div>
 		</div>
