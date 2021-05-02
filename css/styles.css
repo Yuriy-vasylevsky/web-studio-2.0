@@ -58,6 +58,12 @@ p {
 	text-decoration: none;
 }
 
+.flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
 .container {
 	width: 1200px;
 	padding-left: 15px;
@@ -342,8 +348,9 @@ margin-left: calc(-1 * var(--grid-margin));
 	max-width: 696px;
 	margin-left: auto;
 	margin-right: auto;
-	/* text-align: center; */
+	text-align: center;
 }
+
 .section-hero {
 	padding-top: 200px;
 	padding-bottom: 200px;
@@ -370,7 +377,6 @@ margin-left: calc(-1 * var(--grid-margin));
 .icon {
 	fill: currentColor;
 	margin-right: 10px;
-
 }
 
 .icon-mail {
@@ -394,6 +400,7 @@ margin-left: calc(-1 * var(--grid-margin));
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
+
 .section-advantages-list .title {
 	color: var(--main-title-color);
 	font-weight: 700;
@@ -401,6 +408,7 @@ margin-left: calc(-1 * var(--grid-margin));
 	line-height: 1.14;
 	text-transform: uppercase;
 }
+
 .section-advantages-list .text {
 	font-weight: 400;
 	font-size: 14px;
@@ -410,8 +418,6 @@ margin-left: calc(-1 * var(--grid-margin));
 .section-advantages .grid-item {
 	--grid-item:4;
 }
-
-
 
 .section-advantages-item::before{
 	content: " ";
@@ -423,6 +429,7 @@ margin-left: calc(-1 * var(--grid-margin));
 	border-radius: 10px;
 	background-repeat: no-repeat;
 }
+
 .antenna:before {
 	background-image: url(../img/svg/antenna.svg);
 }
@@ -440,12 +447,12 @@ margin-left: calc(-1 * var(--grid-margin));
 }
 
 
-
 /* work */
 
 .section-work .grid-item {
 	--grid-item:3;
 }
+
 .section-titlle {
 	color: var(--main-title-color);
 	font-weight: 700;
@@ -459,14 +466,13 @@ margin-left: calc(-1 * var(--grid-margin));
 	position: relative;
 }
 
-
 .work-position {
 	position: absolute;
+	bottom: 0;
+	left: 0;
 	width: 100%;
 	height: 70px;
 	background-color: rgba(47, 48, 58, 0.8);;
-	bottom: 0;
-	left: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -477,12 +483,15 @@ margin-left: calc(-1 * var(--grid-margin));
 }
 
 /* teem */
+
 .section-teem {
 	background-color:var(--maim-bg-color);
 }
+
 .section-teem .grid-item {
 	--grid-item:4;
 }
+
 .section-teem-list .title {
 	color: var(--main-title-color);
 	font-weight: 500;
@@ -490,6 +499,7 @@ margin-left: calc(-1 * var(--grid-margin));
 	line-height: 1.19;
 	text-align: center;
 }
+
 .section-teem-list .text {
 	font-weight: 400;
 	font-size: 16px;
@@ -502,6 +512,7 @@ margin-left: calc(-1 * var(--grid-margin));
 	padding-top: 30px;
 	padding-bottom: 10px;
 }
+
 .team-expo .text {
 	padding-bottom: 30px;
 	margin: 0;
@@ -510,6 +521,7 @@ margin-left: calc(-1 * var(--grid-margin));
 .team-expo {
 	text-align: center;
 }
+
 .section-teem-list .item {
 	background: #FFFFFF;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -549,7 +561,8 @@ background-color: var(--main-accente-color);
 	text-align: center;
 	margin-bottom: 30px;
 }
-.social-item {
+
+.social-item:not(:last-child) {
 	margin-right: 10px;
 }
 
@@ -619,10 +632,8 @@ background-color: var(--main-accente-color);
 
 /* footer */
 
-.flex {
-	display: flex;
-	justify-content: space-between;
-	align-items: baseline;
+.footer {
+	background: var(--accente-bg-color);
 }
 
 .footer-section-titlle {
@@ -638,11 +649,6 @@ background-color: var(--main-accente-color);
 	color: var(--white-color);
 	display: block;
 	padding-top: 60px;
-}
-
-.footer {
-	background: var(--accente-bg-color);
-
 }
 
 .footer-list {
@@ -686,9 +692,11 @@ background-color: var(--main-accente-color);
 .adres {
 	flex-basis: calc(50% / 2 - 45px);
 }
+
 .footer-social-list {
 	flex-basis: calc(50% / 2 - 45px);
 }
+
 .podpiska {
 	flex-basis: calc(50% - 15px);
 	display: flex;
@@ -699,11 +707,10 @@ background-color: var(--main-accente-color);
 	background: rgba(255, 255, 255, 0.1);
 }
 
-.footer .social-link:hover {
+.footer .social-link:hover,
+.footer .social-link:focus {
 	background: var(--main-accente-color);
 } 
-
-
 
 /* portfolio */
 
@@ -771,7 +778,7 @@ background-color: var(--main-accente-color);
 	overflow: hidden;
 }
 
-.portfolip-expo-position {
+.portfolio-expo-position {
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -786,15 +793,14 @@ background-color: var(--main-accente-color);
 	transition: transform var(--transform-time) linear,
 	opacity var(--transform-time) linear,
 	background-color var(--transform-time) linear;
-	z-index: 10;
 }
 
-.shesdov-link:hover .portfolip-expo-position {
+.shesdov-link:hover .portfolio-expo-position {
 	opacity: 1;
 	transform: translateY(0%);
 }
 
-.portfolip-expo-position .text {
+.portfolio-expo-position .text {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 1.56;
