@@ -1,0 +1,30 @@
+.portfolio-section .title {
+	color: var(--main-title-color);
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2.0;
+	letter-spacing: 0.06em;
+}
+
+.portfolio-section .text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.87;
+	color: #757575;
+}
+
+.portfolio-section .grid-item {
+	--grid-item:3;
+}
+
+.portfolio-expo {
+	border-left: 1px solid #ECECEC;
+	border-right: 1px solid #ECECEC;
+	border-bottom: 1px solid #ECECEC;
+	padding: 20px 24px;
+}
+
+.portfolio-expo .text {
+	margin: 0;
+	padding-top: 4px;
+}

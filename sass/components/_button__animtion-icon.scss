@@ -1,0 +1,31 @@
+/* технологія зміни іконок при ховері  */
+
+.section-hero .button::before,
+.section-hero .button::after {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	transition: transform var(--transform-time) linear;
+}
+
+.section-hero .button::before {
+	margin-right: 10px;
+	background-image: url(../img/svg/twitter.svg);
+}
+
+.section-hero .button::after {
+	position: absolute;
+	left: 32px;
+	top: 50%;
+	transform: translateY(calc(-50% + 35px));
+	background-image: url(../img/svg/instagram.svg);
+}
+
+.section-hero .button:hover:before {
+	transform: translateY(-35px);
+}
+
+.section-hero .button:hover::after {
+	transform: translateY(-50%);
+}

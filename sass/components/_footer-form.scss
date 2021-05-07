@@ -1,0 +1,56 @@
+
+.form {
+	display: inline-flex;
+	position: relative;
+}
+
+.input-mail::placeholder {
+	font-family: Roboto;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.25;
+	display: flex;
+	align-items: center;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.input-mail {
+	display: flex;	
+	padding: 15px;
+	width: 358px;
+	background-color: var(--accente-bg-color);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	margin-right: 12px;
+	outline-color: var(--main-accente-color);
+}
+
+.label-email {
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	transform: translateY(-50%);
+	transition: transform var(--transform-time) linear;
+}
+
+/* .input-mail:focus + .label-email {
+	transform: translate(-21px, -40px);
+} */
+
+.form:focus-within  .label-email,
+.input-mail:not(:placeholder-shown) + .label-email {
+	transform: translate(-21px, -40px);
+}
+
+.btn-icon{
+	width: 24px;
+	height: 24px;
+	fill:var(--white-color);
+	margin-left: 10px;
+	transition: fill var(--transform-time) linear;
+}
+
+.button:hover .btn-icon {
+	fill: var(--main-title-color);
+}

@@ -1,0 +1,60 @@
+.client-link {
+	border: 1px solid var(--main-icon-color);
+	fill: var(--main-icon-color);
+	border-radius: 4px;
+	height: 90px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	transition: border var(--transform-time) linear;
+}
+
+.section-client .grid-item {
+	--grid-item:6
+}
+
+.client-link .icon {
+	fill: var(--main-text-color);
+	transition: fill var(--transform-time) linear;
+}
+
+.client-link:hover .icon,
+.client-link:focus .icon {
+	fill: var(--main-accente-color);
+	
+}
+
+.client-link:hover,
+.client-link:focus {
+	--main-icon-color:var(--main-accente-color);
+}
+
+.list-client li:nth-child(1) svg {
+	width: 45px;
+	height: 50px;
+}
+
+.list-client li:nth-child(2) svg {
+	width: 40px;
+	height: 52px;
+}
+	
+.list-client li:nth-child(3) svg {
+	width: 41px;
+	height: 43px;
+}
+
+.list-client li:nth-child(4) svg {
+	width: 80px;
+	height: 42px;
+}
+
+.list-client li:nth-child(5) svg {
+	width: 59px;
+	height: 47px;
+}
+
+.list-client li:nth-child(6) .icon {
+	width: 88px;
+	height: 45px;
+}
