@@ -19,7 +19,15 @@
 }
 
 .section-advantages .grid-item {
-	--grid-item:4;
+	--grid-item:1;
+
+	@media screen and (min-width:768px) {
+		--grid-item:2;
+	}
+
+	@media screen and (min-width:1200px) {
+		--grid-item:4;
+	}
 }
 
 .section-advantages-item::before{

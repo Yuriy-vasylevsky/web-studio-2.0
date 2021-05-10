@@ -1,7 +1,24 @@
 
 .form {
-	display: inline-flex;
-	position: relative;
+	
+
+	@media screen and (min-width:480px) {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		width: 100%;
+	}
+
+	@media screen and (min-width:768px) {
+		
+	}
+
+	@media screen and (min-width:1200px) {
+		display: flex;
+		flex-direction: row;
+		margin-top: 0;
+	}
+
 }
 
 .input-mail::placeholder {
@@ -17,13 +34,23 @@
 .input-mail {
 	display: flex;	
 	padding: 15px;
-	width: 358px;
+	
+	width: 100%;
 	background-color: var(--accente-bg-color);
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
 	margin-right: 12px;
 	outline-color: var(--main-accente-color);
+
+  
+	@media screen and (min-width:768px) {
+		width: 450px;
+	}
+  
+	@media screen and (min-width:1200px) {
+		width: 358px;
+	}
 }
 
 .label-email {
