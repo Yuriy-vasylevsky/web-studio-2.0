@@ -215,7 +215,12 @@ p {
 @media screen and (max-width: 767px) {
   .modal {
     max-width: 450px;
-    margin: 15px 15px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    width: calc(100% - 30px);
   }
 }
 
