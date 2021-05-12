@@ -117,11 +117,17 @@
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 20px;
+	
+}
+
+.form-label-checkbox .text {
+	font-size: 12px;
+	letter-spacing: 0.03em;
 	font-weight: 400;
-	font-size: 14px;
 	line-height: 1.71;
 	color: var(--main-text-color);
 }
+
 
 .check-icon {
 	display:flex;
@@ -129,7 +135,7 @@
 	height: 15px;
 	border: 2px solid#212121;
 	border-radius: 2px;
-	margin-right: 4px;
+	margin-right: 8px;
 }
 
 .form-input-checkbox:checked + .check-icon{
