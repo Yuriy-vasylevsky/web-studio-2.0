@@ -22,15 +22,14 @@
 	0px 1px 1px rgba(0, 0, 0, 0.14),
 	0px 2px 1px rgba(0, 0, 0, 0.2);
 
-	@media screen and (max-width:1199px) {
-		width: 100%;
-		max-width: 450px;
-	}
-
 	@media screen and (max-width:479px) {
 		width: calc(100% - 30px);
 	}
 
+	@media screen and (max-width:1199px) {
+		width: 100%;
+		max-width: 450px;
+	}
 }
 
 .is-hidden {

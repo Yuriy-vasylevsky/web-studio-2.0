@@ -8,6 +8,11 @@
 	border-bottom: 1px solid #ECECEC;
 	background-color: #fff;
 	z-index: 100;
+
+	@media screen and (max-width:767px) {
+      padding-top: 5px;
+		padding-bottom: 5px;
+      }
 }
 
 .header .container {
