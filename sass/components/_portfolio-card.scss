@@ -1,7 +1,8 @@
 .shesdov-link {
 	display: flex;
-// 	flex-direction: column;
-// 	align-items: stretch;
+	flex-direction: column;
+	// align-items: stretch;
+	justify-content: stretch;
 }
 
 .shesdov-link:hover,

@@ -36,6 +36,7 @@
 	padding: 15px;
 	
 	width: 100%;
+	height: 50px;
 	background-color: var(--accente-bg-color);
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -49,7 +50,8 @@
 	}
   
 	@media screen and (min-width:1200px) {
-		width: 358px;
+		max-width: 358px;
+		width: 100%;
 	}
 }
 

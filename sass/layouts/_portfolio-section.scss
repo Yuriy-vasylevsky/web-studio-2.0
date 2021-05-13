@@ -30,11 +30,28 @@
 	border-right: 1px solid #ECECEC;
 	border-bottom: 1px solid #ECECEC;
 	padding: 20px 24px;
-	display: flex;
-	flex-direction: column;
+	display: inline-block;
+	// flex-direction: column;
+	// height: 100%;
+}
+
+.portfolio-section-list li {
+	display: inline-block;
+  	vertical-align: top;
 }
 
 .portfolio-expo .text {
 	margin: 0;
 	padding-top: 4px;
+	// flex-grow: 2;
+	vertical-align: middle
 }
+
+// .portfolio-expo .text:last-child {
+// 	align-items: flex-end;
+// 	margin-top: auto;
+// } 
+
+// .img-expo{
+// 	display: flex;
+// }
