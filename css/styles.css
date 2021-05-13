@@ -198,6 +198,7 @@ p {
   height: 100%;
   background-color: rgba(48, 49, 59, 0.507);
   z-index: 100;
+  overflow-y: scroll;
 }
 
 .modal {
@@ -212,7 +213,7 @@ p {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .modal {
     width: 100%;
     max-width: 450px;
@@ -352,11 +353,17 @@ p {
 }
 
 .form-label-checkbox .text {
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.03em;
   font-weight: 400;
   line-height: 1.71;
   color: var(--main-text-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .form-label-checkbox .text {
+    font-size: 12px;
+  }
 }
 
 .check-icon {
@@ -553,6 +560,31 @@ p {
   color: #FFFFFF;
 }
 
+.icon-menu {
+  width: 40px;
+  height: 40px;
+}
+
+.button-menu {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.button-menu .icon-close-menu {
+  display: none;
+}
+
+.button-menu.is-open .icon-close-menu {
+  display: block;
+}
+
+.button-menu.is-open .icon-open-menu {
+  display: none;
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -588,7 +620,7 @@ p {
   align-items: center;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .header .container {
     justify-content: space-between;
   }
@@ -635,7 +667,14 @@ p {
   transition: color var(--transform-time) linear;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
+  .site-nav,
+  .contact-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-nav {
     flex-direction: column;
     display: inline-flex;

@@ -1,0 +1,28 @@
+.icon-menu{
+   width: 40px;
+   height: 40px;
+}
+
+.button-menu {
+   display: inline-flex;
+   margin: 0;
+   padding: 0;
+   border: none;
+   background-color: transparent ;
+}
+
+.icon-open-menu {
+
+}
+
+.button-menu .icon-close-menu {
+   display: none;
+}
+
+.button-menu.is-open .icon-close-menu {
+   display: block;
+}
+
+.button-menu.is-open .icon-open-menu {
+   display: none;
+}
