@@ -397,11 +397,14 @@ p {
   margin-right: auto;
 }
 
+.form {
+  position: relative;
+}
+
 @media screen and (min-width: 480px) {
   .form {
     display: flex;
     flex-direction: column;
-    position: relative;
     width: 100%;
   }
 }
@@ -456,6 +459,13 @@ p {
   left: 20px;
   transform: translateY(-50%);
   transition: transform var(--transform-time) linear;
+}
+
+@media screen and (max-width: 1199px) {
+  .label-email {
+    top: 25px;
+    left: 25px;
+  }
 }
 
 /* .input-mail:focus + .label-email {
@@ -1383,15 +1393,9 @@ p {
   display: inline-block;
 }
 
-.portfolio-section-list li {
-  display: inline-block;
-  vertical-align: top;
-}
-
 .portfolio-expo .text {
   margin: 0;
   padding-top: 4px;
-  vertical-align: middle;
 }
 
 .filter {

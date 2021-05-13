@@ -25,15 +25,15 @@
 			<nav class="navigation">
 				<ul class="site-nav list">
 					<li class="item ">
-						<a href="/" class="link link-hover "> Студия </a>
+						<a href="/" class="link link-hover current">Студия</a>
 					</li>
 
 					<li class="item">
-						<a href="portfolio.html" class="link link-hover current"> Портфолио </a>
+						<a href="portfolio.html" class="link link-hover">Портфолио</a>
 					</li>
 
 					<li class="item">
-						<a href="/" class="link link-hover"> Контакты </a>
+						<a href="/" class="link link-hover">Контакты</a>
 					</li>
 				</ul>
 			</nav>
@@ -57,9 +57,63 @@
 					</a>
 				</li>
 			</ul>
-		</div>
 
+			<button class="button-menu " tepe="button" aria-expanded="false" data-menu-button > 
+				<svg class="icon-menu"
+				aria-label="кнопка открития меню">
+					<use class="icon-open-menu" href="./img/sprite.svg#icon-menu"></use>
+					<use class="icon-close-menu" href="./img/sprite.svg#icon-close-menu"></use>
+				</svg>
+			</button>
+		</div>
 	</header>
+
+	<div class="mobile-menu " data-menu>
+		<div class="mobile-container"> 
+			<ul class="site-nav-mobile list">
+				<li class="item">
+					<a href="/" class="link link-hover current">Студия</a>
+				</li>
+
+				<li class="item">
+					<a href="portfolio.html" class="link link-hover">Портфолио</a>
+				</li>
+
+				<li class="item">
+					<a href="/" class="link link-hover">Контакты</a>
+				</li>
+			</ul>
+
+			<ul class="contact-nav-mobile list">
+				<li class="item">
+					<a href="tel:+380961111111" class="link ">
+						+38 098 73 59 299
+					</a>
+				</li>
+
+				<li class="item">
+					<a href="mailto:info@devstudio.com" class="link linck-font">
+						yuriy.vasylevsky@gmail.com
+					</a>
+				</li>
+			</ul>
+
+			<ul class="mobile-social list" >
+				<li class="item">
+					<a class="link" href="/">Instagram</a>
+				</li>
+				<li class="item">
+					<a class="link" href="/">Tvitter</a>
+				</li>
+				<li class="item">
+					<a class="link" href="/">Facebook</a>
+				</li>
+				<li class="item">
+					<a class="link" href="/">Linkedin</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 
 	<!-- основна частина -->
 	<Main>
@@ -347,6 +401,9 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="./js/modal.js"></script>
+	<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
