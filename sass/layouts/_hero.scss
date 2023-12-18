@@ -2,29 +2,57 @@
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-
+  // text-align: center;
+  // overflow: hidden;
   @media screen and (max-width: 1199px) {
     max-width: 360px;
   }
 }
 
 .section-hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: linear-gradient(#c4c4c4, #c4c4c4);
+
+  display: flex;
+  align-items: center;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../img/bg/bg.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   max-width: 1600px;
-  background-position-x: 50px;
-  background-position-y: 50px;
+  height: auto;
   margin-right: auto;
   margin-left: auto;
+  min-height: 600px;
+
+  // @media screen and (min-width: 1200px) {
+  //   max-width: 1600px;
+  //   min-height: 600px;
+  // }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 1200px;
+    min-height: 400px;
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/bg/tablet-bg.png);
+  }
+
+  @media screen and (max-width: 767px)  {
+    max-width: 480px;
+    min-height: 400px;
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/bg/mob-bg.png);
+  }
+
+
+
 }
 
 .hero-title {
